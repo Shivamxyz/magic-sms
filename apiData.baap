@@ -5,11 +5,11 @@ false = "false"
 
 apidata = {
 
-"Byjus":("https://mtnucleus.byjusweb.com/api/acs/v2/send-otp",{"phoneNumber":target,"page":"free-trial-classes"},{},"POST","""{"isOtpExhausted":false,"""),
+"Mater":(f"https://www.rummycircle.com/api/fl/auth/v3/getOtp",{"mobile":target,"deviceId":"d6be3862-7659-46c0-98b9-3d13328a243c","deviceName":"","refCode":"","isPlaycircle":"false"},{},"POST",'''success":true'''),
 
 "Rummycircle":(f"https://www.rummycircle.com/api/fl/auth/v3/getOtp",{"mobile":target,"deviceId":"d6be3862-7659-46c0-98b9-3d13328a243c","deviceName":"","refCode":"","isPlaycircle":"false"},{},"POST",'''success":true'''),
 
-"lona":(f"https://www.loanbaba.com/sdgpeknj/MAppService.asmx/SendOTPonCall",{"phoneNo":f"str(target)"},{"Content-Type":"application/json"},"POST","200")
+"Land":(f"https://www.rummycircle.com/api/fl/auth/v3/getOtp",{"mobile":target,"deviceId":"d6be3862-7659-46c0-98b9-3d13328a243c","deviceName":"","refCode":"","isPlaycircle":"false"},{},"POST",'''success":true'''),
 
 
 }
@@ -17,7 +17,7 @@ apidata = {
 
 apis = [
 
-apidata["Byjus"],
+apidata["Mater"],
 apidata["Rummycircle"],
-apidata["lona"]
+apidata["Land"]
 ]
